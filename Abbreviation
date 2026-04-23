@@ -1,0 +1,10 @@
+n = int(input())
+words = input().split()
+
+abbr = ""
+
+for i in range(n):
+    if words[i][0].isupper():
+        abbr += words[i][0]
+
+print(abbr)
