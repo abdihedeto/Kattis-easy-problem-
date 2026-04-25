@@ -1,0 +1,9 @@
+a=input()
+if "."in a:
+    m=a.find(".")
+    if int(a[m+1])>=5:
+        print(int(float(a))+1)
+    else:
+        print(int(float(a)))
+else:
+    print(a)
