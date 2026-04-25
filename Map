@@ -1,0 +1,6 @@
+r1,s= map(int, input().split())
+def abdi (r1,s):
+    r2=(2*s)-r1
+    return(r2)
+x=abdi(r1,s)
+print(x)
