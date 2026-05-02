@@ -1,0 +1,17 @@
+a, b = map(int, input().split())
+totalalcohol1 = 0
+totalvolume1 = 0
+totalalcohol2 = 0
+totalvolume2 = 0
+for i in range(a):
+    x, y = map(int, input().split())   # amount, percentage
+    totalalcohol1 += x * y
+    totalvolume1 += x
+for j in range(b):
+    x, y = map(int, input().split())
+    totalalcohol2 += x * y
+    totalvolume2 += x
+if totalalcohol1 * totalvolume2 == totalalcohol2 * totalvolume1:
+    print("same")
+else:
+    print("different")
