@@ -1,0 +1,6 @@
+a=input()
+b="5"
+if a[0]==a[1]==a[2]==b:
+    print(1)
+else:
+    print(0)
