@@ -1,0 +1,3 @@
+a=input()
+b=a.count("e")
+print("h"+ 2*b*"e"+"y")
