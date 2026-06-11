@@ -1,0 +1,9 @@
+n,l=map(int, input().split())
+height_of_friends=list(map(int,input().split()))
+width=0
+for i in range (n):
+	if height_of_friends[i]<=l:
+		width+=1
+	else:
+		width+=2
+print (width)
