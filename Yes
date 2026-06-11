@@ -1,0 +1,9 @@
+n=int(input())
+b='YES'
+for i in range (n):
+	a=input().upper()
+
+	if a==b:
+		print('yes')
+	else:
+		print('no')
