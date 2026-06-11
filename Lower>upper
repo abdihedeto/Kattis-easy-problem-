@@ -1,0 +1,14 @@
+word=input()
+number_of_lower_case=0
+number_of_upper_case=0
+b=[]
+for i in range(len(word)):
+	b.append(word[i])
+	if b[i]==b[i].upper():
+		number_of_upper_case+=1
+	else:
+		number_of_lower_case+=1
+if number_of_upper_case>number_of_lower_case:
+	print(word.upper())
+else:
+	print(word.lower())
