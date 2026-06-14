@@ -1,0 +1,11 @@
+n=int(input())
+arr=list(map(int,input().split()))
+b=[]
+for i in range(n//2):
+	b.append(arr[0+i])
+	b.append(arr[-1-i])
+if n%2!=0:
+	b.append(arr[n//2])
+for i in range(n):
+	print(b[i],end=' ')
+	
