@@ -1,0 +1,11 @@
+n=int(input())
+x=0
+arr=list(map(int,input().split()))
+for i in range(n//2):
+	if arr[i]!=arr[-1-i]:
+		print('NO')
+		break
+	else:
+		x+=1
+if n//2==x:
+	print('YES'
