@@ -1,0 +1,16 @@
+n = int(input())
+
+for i in range(n):
+    b = 0
+    num_arr = int(input())
+    arr = list(map(int, input().split()))
+
+    if num_arr % 2 != 0:
+        print(-1)
+    else:
+        for i in range(num_arr):
+            if arr[i] % 2 == 0:
+                b += 1
+
+        print(abs(b - num_arr // 2))
+			
