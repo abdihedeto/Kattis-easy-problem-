@@ -1,0 +1,14 @@
+n=int(input())
+a=[]
+c=[]
+c.append(n+1)
+for i in range(n-1):
+	c.append(c[i]+n)
+
+	
+for i in range(n*n+1):
+	if i<=n or i in c:
+		a.append(1)
+	else:
+		a.append(a[i-1]+a[i-n])
+print(max(a))
