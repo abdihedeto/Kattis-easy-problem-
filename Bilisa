@@ -1,0 +1,15 @@
+n=int(input())
+for i in range(n):
+	num_cundle=int(input())
+	a=list(map(int,input().split()))
+	x=a.count(1)
+	y=a.count(2)
+	if x==0 and y%2!=0:
+		print('no')
+	
+	
+	elif x%2!=0:
+		print('no')
+	else:
+		print('yes')
+
