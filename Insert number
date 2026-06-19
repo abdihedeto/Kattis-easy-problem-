@@ -1,0 +1,19 @@
+t = int(input())
+
+for i in range(t):
+    n, d = map(int, input().split())
+    num = input()
+
+    b = list(num)
+
+    inserted = False
+    for i in range(n):
+        if d > int(b[i]):
+            b.insert(i, str(d))
+            inserted = True
+            break
+
+    if not inserted:
+        b.append(str(d))
+
+    print("".join(b))
