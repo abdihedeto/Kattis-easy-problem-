@@ -1,0 +1,9 @@
+n,k=map(int,input().split())
+score=list(map(int, input().split()))
+np=0
+l=score[k-1]
+for i in range(n):
+	if score[i]>=l and score[i]>0:
+		np+=1
+print(np)
+	
