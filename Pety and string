@@ -1,0 +1,18 @@
+fs = input().lower()
+ss = input().lower()
+
+s = False
+
+for i in range(len(fs)):
+    if fs[i] < ss[i]:
+        print(-1)
+        s = True
+        break
+    elif fs[i] > ss[i]:
+        print(1)
+        s = True
+        break
+
+if not s:
+    print(0)
+
