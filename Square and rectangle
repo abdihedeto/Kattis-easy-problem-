@@ -1,0 +1,13 @@
+n=int(input())
+
+for i in range(n):
+	x=0
+	e=int(input())
+	a=list(map(int,input().split()))
+	b=list(map(int, input().split()))
+	for i in range(e):
+		if a[i]>b[i]:
+			x+=1
+			a.insert(i,b[i])
+			a.pop()
+	print(x)
