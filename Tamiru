@@ -1,0 +1,15 @@
+n=int(input())
+for i in range(n):
+	y=False
+	x=0
+	ns=int(input())
+	a='Timur'
+	b=input()
+	for i in range(5):
+		if a[i] in b and ns==5:
+			x+=1
+		if x==5:
+			y=True
+			print('yes')
+	if not y:
+		print('no')
