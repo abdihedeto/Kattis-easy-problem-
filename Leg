@@ -1,0 +1,7 @@
+n=int(input())
+for i in range(n):
+	a=int(input())
+	b=a%4
+	c=a//4
+	d=b//2
+	print(c+d)
