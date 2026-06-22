@@ -1,0 +1,10 @@
+n=int(input())
+for i in range(n):
+	b=[]
+	a=input()
+	for i in range(6):
+		b.append(int(a[i]))
+	if sum(b[ :3])==sum(b[3: ]):
+		print('yes')
+	else:
+		print('no')
