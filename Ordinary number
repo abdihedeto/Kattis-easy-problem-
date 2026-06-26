@@ -1,0 +1,7 @@
+ordinary = {}
+
+for d in range(1, 10):
+    x = d
+    while x <= 10**9:
+        ordinary[x] = True
+        x = x * 10 + d
