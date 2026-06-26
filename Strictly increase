@@ -1,0 +1,10 @@
+t=int(input())
+for i in range(t):
+	n=int(input())
+	a=list(map(int,input().split()))
+	b=set(a)
+	c=list(b)
+	if len(a)!=len(c):
+		print('no')
+	else:
+		print('yes')
