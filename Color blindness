@@ -1,0 +1,17 @@
+t = int(input())
+
+for i in range(t):
+    y = False
+    c = int(input())
+    a = input()
+    b = input()
+
+    for j in range(c):
+        if (a[j] == 'R' and (b[j] == 'G' or b[j] == 'B')) or \
+           ((a[j] == 'G' or a[j] == 'B') and b[j] == 'R'):
+            print("NO")
+            y = True
+            break
+
+    if not y:
+        print("YES")
