@@ -1,0 +1,8 @@
+t=int(input())
+a=list('codeforces')
+for i in range(t):
+	c=input()
+	if c in a:
+		print('yes')
+	else:
+		print('no')
