@@ -1,0 +1,25 @@
+a=input()
+b=input()
+c=int(a)+int(b)
+x=str(c)
+y=[]
+d=[]
+f=[]
+for i in range(len(a)):
+	d.append(a[i])
+for i in range(len(b)):
+	f.append(b[i])
+for i in range(len(x)):
+	y.append(x[i])
+for  i in range(d.count('0')):
+	d.remove('0')
+for i in range(f.count('0')):
+	f.remove('0')
+for i in range(y.count('0')):
+	y.remove('0')
+m=int(''.join(d))+int(''.join(f))
+if int(m)==int(''.join(y)):
+	print('YES')
+else:
+	print('NO')
+
