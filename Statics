@@ -1,0 +1,7 @@
+n=int(input())
+a=set(map(int, input().split()))
+b=list(a)
+if len(b)>=3:
+	print(b[1])
+else:
+	print('NO')
