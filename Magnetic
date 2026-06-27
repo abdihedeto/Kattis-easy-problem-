@@ -1,0 +1,13 @@
+n=int(input())
+b=[]
+x=0
+for i in range(n):
+	a=input()
+	b.append(a)
+if len(b)>=2:
+	for i in range(n-1):
+		if b[i]!=b[i+1]:
+			x+=1
+	print(x+1)
+else:
+	print(1)
