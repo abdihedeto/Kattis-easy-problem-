@@ -1,0 +1,12 @@
+t = int(input())
+
+for _ in range(t):
+    a, b, c = map(int, input().split())
+
+    anna = a + (c + 1) // 2
+    katie = b + c // 2
+
+    if anna > katie:
+        print("First")
+    else:
+        print("Second")
