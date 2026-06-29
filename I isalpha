@@ -1,0 +1,6 @@
+a=input()
+b=set()
+for i in a:
+	if i.isalpha():
+		b.add(i)
+print(len(b))
