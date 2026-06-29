@@ -1,0 +1,8 @@
+x,y,z=map(int,input().split())
+total=sum(range(1, z+1))
+a=total*x
+if y>=a:
+	print(0)
+else:
+	print(a-y)
+	
