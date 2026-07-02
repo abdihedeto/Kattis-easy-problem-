@@ -1,0 +1,9 @@
+t=int(input())
+for i in range(t):
+	a,b=map(str,input().split())
+	c=list(a)
+	d=list(b)
+	x=c[0]
+	c[0]=d[0]
+	d[0]=x
+	print(''.join(c),''.join(d)
