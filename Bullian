@@ -1,0 +1,9 @@
+t=int(input())
+for i in range(t):
+	
+	n=int(input())
+	a=input()
+	b=set(a)
+	print(len(b)*2+len(a)-len(b))
+			
+			
