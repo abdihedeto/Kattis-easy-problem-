@@ -1,0 +1,12 @@
+n=int(input())
+a=list(range(1,n+1))
+b=[]
+if n%2!=0:
+	print(-1)
+else:
+	for i in range(n-1):
+		if i%2==0:
+			b.append(a[i+1])
+			b.append(a[i])
+	for i in range(n):
+		print(b[i],end=' ')
