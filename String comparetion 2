@@ -1,0 +1,17 @@
+t=int(input())
+for i in range(t):
+	m=0
+	n=int(input())
+	x,y=map(str, input().split())
+	for i in range(n):
+		if x[i] not in y:
+			print('no')
+			break
+		elif x.count(x[i]) != y.count(x[i]):
+			print('no')
+			break
+		else:
+			m+=1
+	if m==n:
+		print('yes')
+	
