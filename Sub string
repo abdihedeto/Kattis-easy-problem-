@@ -1,0 +1,25 @@
+t = int(input())
+
+for _ in range(t):
+    r = 0
+    n, m = map(int, input().split())
+    x = input()
+    s = input()
+
+    if s in x:
+        print(0)
+        continue
+
+    found = False
+
+    for _ in range(5):
+        x *= 2
+        r += 1
+
+        if s in x:
+            print(r)
+            found = True
+            break
+
+    if not found:
+        print(-1)
