@@ -1,0 +1,13 @@
+t=int(input())
+for i in range(t):
+	n=int(input())
+	a=list(map(int,input().split()))
+	largest=a[0]
+	smallest=a[0]
+	for i in range(n):
+		if a[i]>largest:
+			largest=a[i]
+		if a[i]<smallest:
+			smallest=a[i]
+	print(largest-smallest)
+	
