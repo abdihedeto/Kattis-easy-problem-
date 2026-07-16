@@ -1,0 +1,13 @@
+t=int(input())
+for i in range(t):
+	n1=int(input())
+	a=input()
+	n2=int(input())
+	b=input()
+	k=input()
+	for i in range(n2):
+		if k[i]=='V':
+			a=b[i]+a
+		else:
+			a=a+b[i]
+	print(a)
